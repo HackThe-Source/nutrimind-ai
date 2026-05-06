@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriMind AI | Intelligent Nutrition Assistant</title>
+    <meta name="description" content="Personalized nutrition insights using contextual awareness and behavioral science.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>NutriMind <span>AI</span></h1>
+            <p>Smart choices, healthier you.</p>
+        </header>
+
+        <main class="main-card">
+            <form id="nutrition-form">
+                <div class="form-grid">
+                    <div class="input-group full-width">
+                        <label for="food-item">What are you eating?</label>
+                        <input type="text" id="food-item" placeholder="e.g., Double cheeseburger, Kale salad..." required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="time-of-day">Time of Day</label>
+                        <select id="time-of-day">
+                            <option value="morning">Morning</option>
+                            <option value="afternoon" selected>Afternoon</option>
+                            <option value="evening">Evening</option>
+                            <option value="night">Late Night</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="goal">Your Goal</label>
+                        <select id="goal">
+                            <option value="weight-loss">Weight Loss</option>
+                            <option value="muscle-gain">Muscle Gain</option>
+                            <option value="healthy-lifestyle">Healthy Lifestyle</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="mood">Current Mood (Optional)</label>
+                        <select id="mood">
+                            <option value="neutral">Neutral</option>
+                            <option value="happy">Happy</option>
+                            <option value="stressed">Stressed</option>
+                            <option value="tired">Tired</option>
+                            <option value="bored">Bored</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="activity-level">Activity Level</label>
+                        <select id="activity-level">
+                            <option value="low">Low (Sedentary)</option>
+                            <option value="medium" selected>Medium (Active)</option>
+                            <option value="high">High (Athletic)</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group full-width">
+                        <label for="pattern">Past Pattern (Optional)</label>
+                        <input type="text" id="pattern" placeholder="e.g., Had pizza twice this week, skipping breakfast...">
+                    </div>
+                </div>
+
+                <button type="submit" id="analyze-btn">
+                    <span>Analyze with NutriMind AI</span>
+                </button>
+            </form>
+
+            <div id="results" class="results-container">
+                <div class="result-card">
+                    <div class="score-badge" id="res-score">Health Score: --/100</div>
+                    <p class="insight-text" id="res-insight"></p>
+                    
+                    <div class="choices-container">
+                        <label>Better Choices:</label>
+                        <ul class="choices-list" id="res-choices">
+                            <!-- JS will populate -->
+                        </ul>
+                    </div>
+
+                    <div class="smart-tip" id="res-tip">
+                        <strong>Smart Tip:</strong>
+                        <span></span>
+                    </div>
+
+                    <p class="encouragement" id="res-encouragement"></p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
