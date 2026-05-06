@@ -35,7 +35,7 @@ Based on these inputs, it generates:
 ## 🔧 Google Services Used
 
 * Google Fonts for UI design
-* (Optional) Firebase for storing user interaction data
+* Google Fonts (Inter, Outfit) for accessible and modern UI typography
 
 ## 📊 Features
 
